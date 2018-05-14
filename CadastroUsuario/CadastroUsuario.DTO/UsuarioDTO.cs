@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CadastroUsuario.DAL
+namespace CadastroUsuario.DTO
 {
-    public class Class1
+    public class UsuarioDTO
     {
     }
 }

@@ -44,14 +44,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_Altera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_Altera.Designer.cs">
+      <DependentUpon>frm_Altera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Atualiza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Atualiza.Designer.cs">
+      <DependentUpon>frm_Atualiza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Consulta.Designer.cs">
+      <DependentUpon>frm_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Principal.Designer.cs">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Remove.Designer.cs">
+      <DependentUpon>frm_Remove.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Altera.resx">
+      <DependentUpon>frm_Altera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Atualiza.resx">
+      <DependentUpon>frm_Atualiza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Consulta.resx">
+      <DependentUpon>frm_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Principal.resx">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Remove.resx">
+      <DependentUpon>frm_Remove.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,6 +121,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CadastroUsuario.BLL\CadastroUsuario.BLL.csproj">
+      <Project>{33be7507-39f7-4556-a016-426c37727590}</Project>
+      <Name>CadastroUsuario.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CadastroUsuario.DTO\CadastroUsuario.DTO.csproj">
+      <Project>{2570afa2-59f8-4aeb-9229-c408267db520}</Project>
+      <Name>CadastroUsuario.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

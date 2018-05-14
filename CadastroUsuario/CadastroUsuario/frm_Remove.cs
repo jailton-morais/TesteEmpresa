@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CadastroUsuario
 {
-    public partial class Form1 : Form
+    public partial class frm_Remove : Form
     {
-        public Form1()
+        public frm_Remove()
         {
             InitializeComponent();
         }
