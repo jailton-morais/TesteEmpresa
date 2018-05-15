@@ -175,6 +175,7 @@ namespace CadastroUsuario.DAL
                 cmd.Connection = conexao;
                 cmd.CommandText = "DELETE USUARIO  WHERE USU_ID = @USU_ID";
                 cmd.Parameters.Add("@USU_ID", SqlDbType.VarChar).Value = usuario.Usu_id;
+                conexao.Open();
                 retorno = cmd.ExecuteNonQuery();
 
                 return retorno ;

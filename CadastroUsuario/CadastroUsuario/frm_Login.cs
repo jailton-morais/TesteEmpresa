@@ -30,8 +30,11 @@ namespace CadastroUsuario
                 if (retorno == true)
                 {
                     MessageBox.Show("Seja bem vindo!");
-                    Form f = new frm_Principal();
-                    f.Show();
+
+                    ((frm_Principal)Application.OpenForms["frm_Principal"]).AlterarStatus();
+
+
+                    this.Close();
                 }
                 else
                 {

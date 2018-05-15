@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.bt_confirmar = new System.Windows.Forms.Button();
-            this.bt_alterar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,22 +52,13 @@
             // bt_confirmar
             // 
             this.bt_confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_confirmar.Location = new System.Drawing.Point(332, 321);
+            this.bt_confirmar.Location = new System.Drawing.Point(262, 326);
             this.bt_confirmar.Name = "bt_confirmar";
             this.bt_confirmar.Size = new System.Drawing.Size(91, 23);
             this.bt_confirmar.TabIndex = 58;
             this.bt_confirmar.Text = "Confirmar";
             this.bt_confirmar.UseVisualStyleBackColor = true;
-            // 
-            // bt_alterar
-            // 
-            this.bt_alterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_alterar.Location = new System.Drawing.Point(162, 321);
-            this.bt_alterar.Name = "bt_alterar";
-            this.bt_alterar.Size = new System.Drawing.Size(75, 23);
-            this.bt_alterar.TabIndex = 57;
-            this.bt_alterar.Text = "Alterar";
-            this.bt_alterar.UseVisualStyleBackColor = true;
+            this.bt_confirmar.Click += new System.EventHandler(this.bt_confirmar_Click);
             // 
             // label7
             // 
@@ -182,6 +172,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(645, 110);
             this.dataGridView1.TabIndex = 73;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // ID
             // 
@@ -236,7 +227,6 @@
             this.ClientSize = new System.Drawing.Size(684, 361);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bt_confirmar);
-            this.Controls.Add(this.bt_alterar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -258,7 +248,6 @@
         #endregion
 
         private System.Windows.Forms.Button bt_confirmar;
-        private System.Windows.Forms.Button bt_alterar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

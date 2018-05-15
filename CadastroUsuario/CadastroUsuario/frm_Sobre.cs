@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CadastroUsuario
 {
-    public partial class frm_Atualiza : Form
+    public partial class frm_Sobre : Form
     {
-        public frm_Atualiza()
+        public frm_Sobre()
         {
             InitializeComponent();
         }

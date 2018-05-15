@@ -59,6 +59,7 @@
             this.bt_confirmar.TabIndex = 71;
             this.bt_confirmar.Text = "Confirmar";
             this.bt_confirmar.UseVisualStyleBackColor = true;
+            this.bt_confirmar.Click += new System.EventHandler(this.bt_confirmar_Click);
             // 
             // bt_alterar
             // 
@@ -69,6 +70,7 @@
             this.bt_alterar.TabIndex = 70;
             this.bt_alterar.Text = "Alterar";
             this.bt_alterar.UseVisualStyleBackColor = true;
+            this.bt_alterar.Click += new System.EventHandler(this.bt_alterar_Click_1);
             // 
             // label7
             // 
@@ -182,6 +184,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(645, 110);
             this.dataGridView1.TabIndex = 72;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ID
             // 

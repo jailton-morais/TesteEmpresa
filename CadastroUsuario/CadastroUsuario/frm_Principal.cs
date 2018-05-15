@@ -12,96 +12,102 @@ namespace CadastroUsuario
 {
     public partial class frm_Principal : Form
     {
-        private int childFormNumber = 0;
+       
 
         public frm_Principal()
         {
             InitializeComponent();
+            this.toolStripStatusLabel.Text = "STATUS: Desconectado";
+            this.usuarioToolStripMenuItem.Enabled = false;
+           
         }
 
-        private void ShowNewForm(object sender, EventArgs e)
+
+        public void AlterarStatus()
         {
-            Form childForm = new Form();
-            childForm.MdiParent = this;
-            childForm.Text = "Janela " + childFormNumber++;
-            childForm.Show();
+            this.usuarioToolStripMenuItem.Enabled = true;
+            this.toolStripAberto.Visible = true;
+            this.toolStripFechado.Visible = false;
+            this.toolStripStatusLabel.Text = "STATUS: Conectado";
         }
 
-        private void OpenFile(object sender, EventArgs e)
+     
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Arquivos de texto (*.txt)|*.txt|Todos os arquivos (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
+            Form filha = new frm_Consulta();
+            filha.MdiParent = this;
+            filha.Show();
+        }
+
+        private void inseriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form filha = new frm_Inseri();
+            filha.MdiParent = this;
+            filha.Show();
+        }
+
+        private void alteraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form filha = new frm_Altera();
+            filha.MdiParent = this;
+            filha.Show();
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form filha = new frm_Remove();
+            filha.MdiParent = this;
+            filha.Show();
+        }
+
+        private void sobreOSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form filha = new frm_Sobre();
+            filha.MdiParent = this;
+            filha.Show();
+        }
+
+        private void toolStripFechado_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frm_Login>().Count() > 0)
             {
-                string FileName = openFileDialog.FileName;
+
+            }
+            else
+            {
+                Form filho = new frm_Login();
+                filho.MdiParent = this;
+                filho.Show();
             }
         }
 
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripAberto_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Arquivos de texto (*.txt)|*.txt|Todos os arquivos (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
+            this.usuarioToolStripMenuItem.Enabled = false;
+            this.toolStripAberto.Visible = false;
+            this.toolStripFechado.Visible = true;
+            FecharFormulariosFilhos();
+            this.toolStripStatusLabel.Text = "STATUS: Desconectado";
+        }
+
+
+        private void FecharFormulariosFilhos()
+        {
+         
+            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
             {
-                string FileName = saveFileDialog.FileName;
+             
+                if (Application.OpenForms[i].IsMdiChild)
+                {
+               
+                    Application.OpenForms[i].Close();
+                }
             }
         }
 
-        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
+        private void frm_Principal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
-
-        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.Cascade);
-        }
-
-        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
-
-        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
-
-        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.ArrangeIcons);
-        }
-
-        private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (Form childForm in MdiChildren)
-            {
-                childForm.Close();
-            }
+            Application.Exit();
         }
     }
 }
