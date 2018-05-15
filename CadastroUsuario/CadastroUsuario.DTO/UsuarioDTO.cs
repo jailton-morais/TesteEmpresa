@@ -8,5 +8,11 @@ namespace CadastroUsuario.DTO
 {
     public class UsuarioDTO
     {
+        public int Usu_id { get; set; }
+        public string Usu_nome { get; set; }
+        public string Usu_sexo { get; set; }
+        public string Usu_login { get; set; }
+        public string Usu_senha { get; set; }
+        public DateTime Usu_dataNascimento { get; set; }
     }
 }
