@@ -238,7 +238,7 @@
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.label2);
             this.Name = "frm_Consulta";
-            this.Text = "frm_Consulta";
+            this.Text = "Consulta Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

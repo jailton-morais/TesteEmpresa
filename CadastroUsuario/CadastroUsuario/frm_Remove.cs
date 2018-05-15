@@ -25,27 +25,34 @@ namespace CadastroUsuario
         {
             try
             {
-                if (codUsuSelecionado < 0)
-                {
-                    MessageBox.Show("Selecione um usuario antes");
-                    return;
-                }
-                UsuarioDTO usuario = new UsuarioDTO();
-                usuario.Usu_id = codUsuSelecionado;
+                DialogResult confirm = MessageBox.Show("Confirma a exclusão do usuario?", "Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
 
-                int x = new UsuarioBLL().RemoveUsuario(usuario);
-                if (x > 0)
+                if (confirm.ToString().ToUpper() == "YES")
                 {
-                    MessageBox.Show("Excluido com sucesso!");
-                    ConsultaUsuario();
-                }
 
+
+                    if (codUsuSelecionado < 0)
+                    {
+                        MessageBox.Show("Selecione um usuario antes");
+                        return;
+                    }
+                    UsuarioDTO usuario = new UsuarioDTO();
+                    usuario.Usu_id = codUsuSelecionado;
+
+                    int x = new UsuarioBLL().RemoveUsuario(usuario);
+                    if (x > 0)
+                    {
+                        MessageBox.Show("Excluido com sucesso!");
+                        ConsultaUsuario();
+                    }
+
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ocorreu um erro inesperado: " + ex.Message);
             }
-
+        
         }
 
         private void ConsultaUsuario()

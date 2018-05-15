@@ -56,7 +56,7 @@
             this.bt_confirmar.Location = new System.Drawing.Point(332, 321);
             this.bt_confirmar.Name = "bt_confirmar";
             this.bt_confirmar.Size = new System.Drawing.Size(91, 23);
-            this.bt_confirmar.TabIndex = 71;
+            this.bt_confirmar.TabIndex = 7;
             this.bt_confirmar.Text = "Confirmar";
             this.bt_confirmar.UseVisualStyleBackColor = true;
             this.bt_confirmar.Click += new System.EventHandler(this.bt_confirmar_Click);
@@ -67,7 +67,7 @@
             this.bt_alterar.Location = new System.Drawing.Point(162, 321);
             this.bt_alterar.Name = "bt_alterar";
             this.bt_alterar.Size = new System.Drawing.Size(75, 23);
-            this.bt_alterar.TabIndex = 70;
+            this.bt_alterar.TabIndex = 6;
             this.bt_alterar.Text = "Alterar";
             this.bt_alterar.UseVisualStyleBackColor = true;
             this.bt_alterar.Click += new System.EventHandler(this.bt_alterar_Click_1);
@@ -122,7 +122,7 @@
             this.cb_sexo.Location = new System.Drawing.Point(162, 52);
             this.cb_sexo.Name = "cb_sexo";
             this.cb_sexo.Size = new System.Drawing.Size(64, 21);
-            this.cb_sexo.TabIndex = 63;
+            this.cb_sexo.TabIndex = 2;
             // 
             // tb_login
             // 
@@ -130,7 +130,7 @@
             this.tb_login.Location = new System.Drawing.Point(162, 91);
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(229, 20);
-            this.tb_login.TabIndex = 60;
+            this.tb_login.TabIndex = 3;
             // 
             // tb_data_nascimento
             // 
@@ -138,7 +138,7 @@
             this.tb_data_nascimento.Location = new System.Drawing.Point(159, 158);
             this.tb_data_nascimento.Name = "tb_data_nascimento";
             this.tb_data_nascimento.Size = new System.Drawing.Size(229, 20);
-            this.tb_data_nascimento.TabIndex = 64;
+            this.tb_data_nascimento.TabIndex = 5;
             // 
             // tb_senha
             // 
@@ -147,7 +147,7 @@
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(229, 20);
-            this.tb_senha.TabIndex = 62;
+            this.tb_senha.TabIndex = 4;
             // 
             // tb_nome
             // 
@@ -155,7 +155,7 @@
             this.tb_nome.Location = new System.Drawing.Point(162, 16);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(453, 20);
-            this.tb_nome.TabIndex = 59;
+            this.tb_nome.TabIndex = 1;
             // 
             // label2
             // 
@@ -191,12 +191,14 @@
             this.ID.DataPropertyName = "USU_ID";
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
             // LOGIN
             // 
             this.LOGIN.DataPropertyName = "USU_LOGIN";
             this.LOGIN.HeaderText = "LOGIN";
             this.LOGIN.Name = "LOGIN";
+            this.LOGIN.ReadOnly = true;
             this.LOGIN.Visible = false;
             // 
             // SENHA
@@ -204,6 +206,7 @@
             this.SENHA.DataPropertyName = "USU_SENHA";
             this.SENHA.HeaderText = "SENHA";
             this.SENHA.Name = "SENHA";
+            this.SENHA.ReadOnly = true;
             this.SENHA.Visible = false;
             // 
             // NOME
@@ -211,6 +214,7 @@
             this.NOME.DataPropertyName = "USU_NOME";
             this.NOME.HeaderText = "NOME";
             this.NOME.Name = "NOME";
+            this.NOME.ReadOnly = true;
             this.NOME.Width = 200;
             // 
             // SEXO
@@ -218,12 +222,14 @@
             this.SEXO.DataPropertyName = "USU_SEXO";
             this.SEXO.HeaderText = "SEXO";
             this.SEXO.Name = "SEXO";
+            this.SEXO.ReadOnly = true;
             // 
             // DATA_NASCIMENTO
             // 
             this.DATA_NASCIMENTO.DataPropertyName = "USU_DATANASCIMENTO";
             this.DATA_NASCIMENTO.HeaderText = "DATA_NASCIMENTO";
             this.DATA_NASCIMENTO.Name = "DATA_NASCIMENTO";
+            this.DATA_NASCIMENTO.ReadOnly = true;
             this.DATA_NASCIMENTO.Width = 200;
             // 
             // frm_Altera
@@ -245,7 +251,7 @@
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.label2);
             this.Name = "frm_Altera";
-            this.Text = "frm_Altera";
+            this.Text = "Altera Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

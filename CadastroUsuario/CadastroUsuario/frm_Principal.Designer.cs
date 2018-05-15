@@ -135,6 +135,7 @@
             this.toolStripAberto.Name = "toolStripAberto";
             this.toolStripAberto.Size = new System.Drawing.Size(23, 22);
             this.toolStripAberto.Text = "toolStripButton1";
+            this.toolStripAberto.ToolTipText = "Clique aqui para fechar o Sistema";
             this.toolStripAberto.Visible = false;
             this.toolStripAberto.Click += new System.EventHandler(this.toolStripAberto_Click);
             // 
@@ -146,6 +147,7 @@
             this.toolStripFechado.Name = "toolStripFechado";
             this.toolStripFechado.Size = new System.Drawing.Size(23, 22);
             this.toolStripFechado.Text = "toolStripButton2";
+            this.toolStripFechado.ToolTipText = "Clique aqui para acessar o Sistema";
             this.toolStripFechado.Click += new System.EventHandler(this.toolStripFechado_Click);
             // 
             // statusStrip

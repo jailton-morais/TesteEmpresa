@@ -55,7 +55,7 @@
             this.bt_confirmar.Location = new System.Drawing.Point(262, 326);
             this.bt_confirmar.Name = "bt_confirmar";
             this.bt_confirmar.Size = new System.Drawing.Size(91, 23);
-            this.bt_confirmar.TabIndex = 58;
+            this.bt_confirmar.TabIndex = 6;
             this.bt_confirmar.Text = "Confirmar";
             this.bt_confirmar.UseVisualStyleBackColor = true;
             this.bt_confirmar.Click += new System.EventHandler(this.bt_confirmar_Click);
@@ -110,7 +110,7 @@
             this.cb_sexo.Location = new System.Drawing.Point(162, 52);
             this.cb_sexo.Name = "cb_sexo";
             this.cb_sexo.Size = new System.Drawing.Size(64, 21);
-            this.cb_sexo.TabIndex = 50;
+            this.cb_sexo.TabIndex = 2;
             // 
             // tb_login
             // 
@@ -118,7 +118,7 @@
             this.tb_login.Location = new System.Drawing.Point(162, 91);
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(229, 20);
-            this.tb_login.TabIndex = 47;
+            this.tb_login.TabIndex = 3;
             // 
             // tb_data_nascimento
             // 
@@ -126,7 +126,7 @@
             this.tb_data_nascimento.Location = new System.Drawing.Point(159, 158);
             this.tb_data_nascimento.Name = "tb_data_nascimento";
             this.tb_data_nascimento.Size = new System.Drawing.Size(229, 20);
-            this.tb_data_nascimento.TabIndex = 51;
+            this.tb_data_nascimento.TabIndex = 5;
             // 
             // tb_senha
             // 
@@ -135,7 +135,7 @@
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(229, 20);
-            this.tb_senha.TabIndex = 49;
+            this.tb_senha.TabIndex = 4;
             // 
             // tb_nome
             // 
@@ -143,7 +143,7 @@
             this.tb_nome.Location = new System.Drawing.Point(162, 16);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(453, 20);
-            this.tb_nome.TabIndex = 46;
+            this.tb_nome.TabIndex = 1;
             // 
             // label2
             // 
@@ -238,7 +238,7 @@
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.label2);
             this.Name = "frm_Remove";
-            this.Text = "frm_Remove";
+            this.Text = "Remove Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

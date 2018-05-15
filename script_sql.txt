@@ -1,0 +1,31 @@
+create database Cadastro;
+
+
+create table Usuario
+(
+usu_id int identity(1,1)not null primary key,
+usu_nome nvarchar(100) not null,
+usu_sexo nchar(1) not null,
+usu_login nvarchar(50) not null,
+usu_senha nvarchar(100) not null,
+usu_dataNascimento datetime not null
+);
+
+
+     SELECT * FROM USUARIO WHERE USU_LOGIN=@USU_LOGIN AND USU_SENHA=@USU_SENHA ;
+ 
+    SELECT * FROM USUARIO ;
+
+    INSERT INTO USUARIO ( usu_nome,usu_sexo,usu_login,usu_senha,usu_datanascimento )  
+                                              VALUES ( @usu_nome,@usu_sexo,@usu_login,@usu_senha,@usu_datanascimento );
+
+               
+     UPDATE Usuario  
+       SET usu_nome = @usu_nome  
+      ,usu_sexo = @usu_sexo  
+      ,usu_login = @usu_login  
+      ,usu_senha = @usu_senha  
+      ,usu_dataNascimento = @usu_dataNascimento  
+    WHERE usu_id=@usu_id ;
+
+      DELETE USUARIO  WHERE USU_ID = @USU_ID;

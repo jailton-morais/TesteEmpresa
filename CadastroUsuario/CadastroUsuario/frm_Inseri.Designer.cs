@@ -120,7 +120,7 @@
             this.bt_novo.Location = new System.Drawing.Point(167, 321);
             this.bt_novo.Name = "bt_novo";
             this.bt_novo.Size = new System.Drawing.Size(91, 23);
-            this.bt_novo.TabIndex = 85;
+            this.bt_novo.TabIndex = 6;
             this.bt_novo.Text = "Novo";
             this.bt_novo.UseVisualStyleBackColor = true;
             this.bt_novo.Click += new System.EventHandler(this.bt_novo_Click);
@@ -131,7 +131,7 @@
             this.bt_inserir.Location = new System.Drawing.Point(370, 321);
             this.bt_inserir.Name = "bt_inserir";
             this.bt_inserir.Size = new System.Drawing.Size(75, 23);
-            this.bt_inserir.TabIndex = 84;
+            this.bt_inserir.TabIndex = 7;
             this.bt_inserir.Text = "Inserir";
             this.bt_inserir.UseVisualStyleBackColor = true;
             this.bt_inserir.Click += new System.EventHandler(this.bt_inserir_Click);
@@ -186,7 +186,7 @@
             this.cb_sexo.Location = new System.Drawing.Point(170, 52);
             this.cb_sexo.Name = "cb_sexo";
             this.cb_sexo.Size = new System.Drawing.Size(64, 21);
-            this.cb_sexo.TabIndex = 78;
+            this.cb_sexo.TabIndex = 2;
             // 
             // tb_login
             // 
@@ -194,7 +194,7 @@
             this.tb_login.Location = new System.Drawing.Point(170, 91);
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(229, 20);
-            this.tb_login.TabIndex = 75;
+            this.tb_login.TabIndex = 3;
             // 
             // tb_data_nascimento
             // 
@@ -202,7 +202,7 @@
             this.tb_data_nascimento.Location = new System.Drawing.Point(167, 158);
             this.tb_data_nascimento.Name = "tb_data_nascimento";
             this.tb_data_nascimento.Size = new System.Drawing.Size(229, 20);
-            this.tb_data_nascimento.TabIndex = 79;
+            this.tb_data_nascimento.TabIndex = 5;
             // 
             // tb_senha
             // 
@@ -211,7 +211,7 @@
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(229, 20);
-            this.tb_senha.TabIndex = 77;
+            this.tb_senha.TabIndex = 4;
             // 
             // tb_nome
             // 
@@ -219,7 +219,7 @@
             this.tb_nome.Location = new System.Drawing.Point(170, 16);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(453, 20);
-            this.tb_nome.TabIndex = 74;
+            this.tb_nome.TabIndex = 1;
             // 
             // label2
             // 
@@ -250,7 +250,7 @@
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.label2);
             this.Name = "frm_Inseri";
-            this.Text = "Inseri";
+            this.Text = "Inseri Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

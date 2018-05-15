@@ -11,7 +11,7 @@ namespace CadastroUsuario.DAL
 {
     public class UsuarioDAL
     {
-
+        
         public static bool AutenticaUsuario(UsuarioDTO usuario)
         {
             bool retorno = false;
@@ -191,6 +191,9 @@ namespace CadastroUsuario.DAL
                 conexao.Close();
             }
         }
+        
 
+
+      
+        }
     }
-}
