@@ -52,7 +52,7 @@
             // bt_confirmar
             // 
             this.bt_confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_confirmar.Location = new System.Drawing.Point(262, 326);
+            this.bt_confirmar.Location = new System.Drawing.Point(271, 326);
             this.bt_confirmar.Name = "bt_confirmar";
             this.bt_confirmar.Size = new System.Drawing.Size(91, 23);
             this.bt_confirmar.TabIndex = 6;
